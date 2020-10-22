@@ -30,9 +30,9 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link" id="nav-link-1" href="#sounds-section">sounds<span class="sr-only">(current)</span></a>
-        <a class="nav-link" id="nav-link-2" href="#">pictures</a>
+        <a class="nav-link" id="nav-link-2" href="#pictures-section">pictures</a>
         <a class="nav-link" id="nav-link-3" href="#">videos</a>
-        <a class="nav-link" id="nav-link-4" href="#">merch</a>
+        <a class="nav-link" id="nav-link-4" href="#">vinyl pre-order</a>
       </div>
     </div>
 </nav>
@@ -62,15 +62,16 @@
         </div>
       </div>
     </div>
-    <!--
+
     <div class="row reverse-fade-row"></div>
 
-    <div class="row" style="height:350px;"></div>
+    <div class="row" style="height:100px;"></div>
 
     <div class="row fade-row"></div>
-   pictures section
-    <div class="row content-row">
-        <!-- BEGIN CAROUSEL
+
+    <!-- Pictures Section -->
+    <div class="row content-row" id="pictures-section">
+        <!-- BEGIN CAROUSEL -->
         <div id="carousel" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -107,33 +108,64 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <!-- End Carousel -->
       </div>
-  </div>
 
-      <div class="row content-row" style="height: 1000px;"></div>
--->
-  </div>
+      <div class="row reverse-fade-row"></div>
+      <div class="row" style="height: 100px;"></div>
+      <div class="row fade-row"></div>
 
-  <!--
-    <div class="container" id="main-content">
-       SPOTIFY EMBED
-        <div class="row text-center rounded">
-            <div class="col-sm-2"></div>
-            <div class="col-sm-2 justify-content-center">
-              <div id="sound-section-text">
-                  <h1 id="#sounds-section">Sounds</h1>
-                  <a href="#" class="fa fa-spotify"></a>
-                  <a href="#" class="fa fa-bandcamp"></a>
-              </div>
-            <div class="col-sm-2"></div>
-            </div>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-4">
-                <iframe src="https://open.spotify.com/embed/artist/57sGdQMr8i5D7PvD8JBQlG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
+      <!-- Video Section -->
+      <div class="row content-row">
+        <div class="col">
+          <h1>videos coming soon</h1>
         </div>
+      </div>
+
+      <div class="row reverse-fade-row"></div>
+
+      <!-- Vinly Preorder Section -->
+      <div class="row fade-row"></div>
+      <div class="row text-center content-row">
+        <div class="col-sm-6 column-section">
+          <h1>180g vinyl preorder</h1>
+          <!-- Paypal Button -->
+          <div class="paypal">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="form">
+                  <input type="hidden" name="cmd" value="_s-xclick">
+
+                  <table>
+                        <tbody>
+                        <tr>
+                          <td>
+                          <input class="form-control" type="hidden" name="on0" value="Quantity">Quantity
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <select class="form-control" name="os0">
+                              <option value="one">one $21.00 USD</option>
+                              <option value="Two">two $42.00 USD</option>
+                              <option value="Three">three $63.00 USD</option>
+                            </select>
+                          </td>
+                        </tr>
+                        </tbody>
+                  </table>
+                  <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                  <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                  <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+          <!-- END PAYPAL BUTTON -->
+
+        </div>
+        <div class="col-sm-6 column-section">
+          <img id="preorder-album-art" src="https://i.imgur.com/qV3Wbcc.jpg">
+        </div>
+      </div>
     </div>
--->
+
   <!-- FOOTER -->
 <div class="container-fluid full-width sticky-bottom" id="footer">
   <div class="row text-center">
