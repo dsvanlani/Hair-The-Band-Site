@@ -61,8 +61,6 @@ $lightOrange: #FAA675;
  // Footer stuff
 
  #footer {
-    position: relative;
-    bottom: 0;
     background: $turquoise;
     opacity: .8;
     padding: 4px;
@@ -74,13 +72,26 @@ $lightOrange: #FAA675;
     color: $boldOrange;
     }
     a, a:hover {
-        margin:4px;}
+        margin:4px;
+        }
+
+    .footer-text {
+        margin-top: 5px;
+        }
     small {
-    color: white;}
+    color: white;
+    }
     }
 
 
     // Main Body Stuff
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    }
 
 @media (min-width: 576px) {
     #main-content {
@@ -94,6 +105,55 @@ $lightOrange: #FAA675;
     }
 }
 
+.fade-row  {
+    height: 200px;
+    background-color: black;
+    -webkit-mask-image: -webkit-gradient(linear, left bottom,
+    left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  }
+
+.reverse-fade-row {
+    height: 200px;
+    background-color: black;
+    -webkit-mask-image: -webkit-gradient(linear, left top,
+    left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    margin-top: -2px;
+
+    }
+
+.content-row {
+    color: white;
+    background-color: black;
+    margin-top: -2px;
+    padding-top: 75px;
+    a {
+        color: white;
+        }
+    a:hover {
+        color: $boldOrange;
+        }
+
+    .fa {
+        font-size: 5rem;
+        margin: 20px;
+        }
+    }
+
+.column-section {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#spotify-follow-button {
+    margin-left: 100px;
+    }
+
+iframe {
+    height: 200px;
+    border-radius: 10px;
+    }
+
 body {
   background: url('../images/trio_shot.png') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -101,22 +161,4 @@ body {
   background-size: cover;
   -o-background-size: cover;
 }
-
-
-#sound-section-text {
-    color: white;
-    padding: 35px 0;
-    margin-top: 140px;
-    background-color: $turquoise;
-    border-radius: 25px;
-
-    a {
-        color: white;
-        font-size: 2rem;
-        margin-right: 10px;
-        }
-    a:hover {
-        color: $boldOrange;
-        }
-    }
 

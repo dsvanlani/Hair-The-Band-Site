@@ -52,8 +52,6 @@
   }
 }
 #footer {
-  position: relative;
-  bottom: 0;
   background: #40ADAD;
   opacity: 0.8;
   padding: 4px;
@@ -68,8 +66,18 @@
 #footer a, #footer a:hover {
   margin: 4px;
 }
+#footer .footer-text {
+  margin-top: 5px;
+}
 #footer small {
   color: white;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
@@ -82,28 +90,58 @@
     margin-top: 400px;
   }
 }
+.fade-row {
+  height: 200px;
+  background-color: black;
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+}
+
+.reverse-fade-row {
+  height: 200px;
+  background-color: black;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  margin-top: -2px;
+}
+
+.content-row {
+  color: white;
+  background-color: black;
+  margin-top: -2px;
+  padding-top: 75px;
+}
+.content-row a {
+  color: white;
+}
+.content-row a:hover {
+  color: #AD5D2F;
+}
+.content-row .fa {
+  font-size: 5rem;
+  margin: 20px;
+}
+
+.column-section {
+  margin-top: 0px;
+  margin-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#spotify-follow-button {
+  margin-left: 100px;
+}
+
+iframe {
+  height: 200px;
+  border-radius: 10px;
+}
+
 body {
   background: url("../images/trio_shot.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-}
-
-#sound-section-text {
-  color: white;
-  padding: 35px 0;
-  margin-top: 140px;
-  background-color: #40ADAD;
-  border-radius: 25px;
-}
-#sound-section-text a {
-  color: white;
-  font-size: 2rem;
-  margin-right: 10px;
-}
-#sound-section-text a:hover {
-  color: #AD5D2F;
 }
 
 /*# sourceMappingURL=style.css.map */
