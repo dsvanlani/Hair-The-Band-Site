@@ -1,6 +1,5 @@
 .navbar {
-  position: relative;
-  background: #91FFFF;
+  background: rgba(255, 255, 255, 0.3);
   min-height: 90px;
 }
 .navbar button {
@@ -53,11 +52,15 @@
   }
 }
 #footer {
+  position: relative;
+  bottom: 0;
   background: #40ADAD;
+  opacity: 0.8;
   padding: 4px;
 }
 #footer a {
   color: white;
+  font-size: 2rem;
 }
 #footer a:hover {
   color: #AD5D2F;
@@ -67,6 +70,40 @@
 }
 #footer small {
   color: white;
+}
+
+@media (min-width: 576px) {
+  #main-content {
+    margin-top: 400px;
+  }
+}
+@media (max-width: 576px) {
+  #main-content {
+    margin-top: 400px;
+  }
+}
+body {
+  background: url("../images/trio_shot.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#sound-section-text {
+  color: white;
+  padding: 35px 0;
+  margin-top: 140px;
+  background-color: #40ADAD;
+  border-radius: 25px;
+}
+#sound-section-text a {
+  color: white;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+#sound-section-text a:hover {
+  color: #AD5D2F;
 }
 
 /*# sourceMappingURL=style.css.map */

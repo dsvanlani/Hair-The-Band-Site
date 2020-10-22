@@ -8,8 +8,7 @@ $lightOrange: #FAA675;
 
 // Navbar stuff
 .navbar {
-    position: relative;
-    background: $lightBlue;
+    background: rgba(255, 255, 255, 0.3);
     min-height: 90px;
 
     button {
@@ -62,10 +61,14 @@ $lightOrange: #FAA675;
  // Footer stuff
 
  #footer {
+    position: relative;
+    bottom: 0;
     background: $turquoise;
+    opacity: .8;
     padding: 4px;
     a {
     color: white;
+    font-size: 2rem;
     }
     a:hover {
     color: $boldOrange;
@@ -78,4 +81,42 @@ $lightOrange: #FAA675;
 
 
     // Main Body Stuff
+
+@media (min-width: 576px) {
+    #main-content {
+    margin-top: 400px;
+    }
+}
+
+@media (max-width: 576px) {
+    #main-content {
+    margin-top: 400px;
+    }
+}
+
+body {
+  background: url('../images/trio_shot.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+#sound-section-text {
+    color: white;
+    padding: 35px 0;
+    margin-top: 140px;
+    background-color: $turquoise;
+    border-radius: 25px;
+
+    a {
+        color: white;
+        font-size: 2rem;
+        margin-right: 10px;
+        }
+    a:hover {
+        color: $boldOrange;
+        }
+    }
 
