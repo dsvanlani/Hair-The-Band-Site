@@ -6,6 +6,9 @@ $boldBlue: #75FAFA;
 $boldOrange: #AD5D2F;
 $lightOrange: #FAA675;
 
+html {
+    scroll-behavior: smooth;
+    }
 // Navbar stuff
 .navbar {
     background: rgba(255, 255, 255, 0.3);
