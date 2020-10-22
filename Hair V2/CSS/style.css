@@ -126,7 +126,7 @@
 }
 
 #spotify-follow-button {
-  margin-left: 100px;
+  margin-left: 85px;
 }
 
 iframe {
@@ -136,6 +136,17 @@ iframe {
 
 #preorder-album-art {
   height: 325px;
+}
+
+#preorder-section input {
+  margin: 5px;
+}
+#preorder-section label {
+  background-color: black;
+  color: white;
+}
+#preorder-section h1 {
+  margin-top: 125px;
 }
 
 body {
