@@ -1,0 +1,35 @@
+$turquoise: #40ADAD;
+$lightBlue: #91FFFF;
+$boldBlue: #75FAFA;
+$boldOrange: #AD5D2F;
+$lightOrange: #FAA675;
+
+
+.navbar {
+    position: relative;
+    background: $lightBlue;
+    min-height: 90px;
+
+    button {
+    position: absolute;
+    left: 80%;
+    }
+    }
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    }
+
+#nav-logo {
+    width: 160px;
+    height: auto;
+    }
+
+.nav-link {
+    color: $boldOrange;
+    }
+.nav-link:hover {
+    color: $lightOrange;
+    }

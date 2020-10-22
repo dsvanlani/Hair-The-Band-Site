@@ -1,0 +1,30 @@
+.navbar {
+  position: relative;
+  background: #91FFFF;
+  min-height: 90px;
+}
+.navbar button {
+  position: absolute;
+  left: 80%;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+}
+
+#nav-logo {
+  width: 160px;
+  height: auto;
+}
+
+.nav-link {
+  color: #AD5D2F;
+}
+
+.nav-link:hover {
+  color: #FAA675;
+}
+
+/*# sourceMappingURL=style.css.map */
