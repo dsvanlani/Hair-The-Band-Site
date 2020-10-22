@@ -1,17 +1,165 @@
-/* Error: expected ";".
- *     ,
- * 178 |   -webkit-background-size: cover;
- *     |                          ^
- *     '
- *   style.scss 178:26  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a     \2577 \a 178 \2502    -webkit-background-size: cover;\a     \2502                           ^\a     \2575 \a   style.scss 178:26  root stylesheet';
+html {
+  scroll-behavior: smooth;
 }
+
+.navbar {
+  background: rgba(255, 255, 255, 0.3);
+  min-height: 90px;
+}
+.navbar button {
+  position: absolute;
+  left: 80%;
+}
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+}
+
+#nav-logo {
+  width: 160px;
+  height: auto;
+}
+
+.nav-link {
+  color: #AD5D2F;
+}
+
+.nav-link:hover {
+  color: #FAA675;
+}
+
+@media (min-width: 768px) {
+  #nav-link-1 {
+    position: absolute;
+    left: 22%;
+    margin-left: -5px;
+  }
+
+  #nav-link-2 {
+    position: absolute;
+    left: 32%;
+    margin-left: -5px;
+  }
+
+  #nav-link-3 {
+    position: absolute;
+    left: 60%;
+    margin-left: -5px;
+  }
+
+  #nav-link-4 {
+    position: absolute;
+    left: 70%;
+    margin-left: -5px;
+  }
+}
+#footer {
+  background: #40ADAD;
+  opacity: 0.8;
+  padding: 4px;
+}
+#footer a {
+  color: white;
+  font-size: 2rem;
+}
+#footer a:hover {
+  color: #AD5D2F;
+}
+#footer a, #footer a:hover {
+  margin: 4px;
+}
+#footer .footer-text {
+  margin-top: 5px;
+}
+#footer small {
+  color: white;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  #main-content {
+    margin-top: 400px;
+  }
+}
+@media (max-width: 576px) {
+  #main-content {
+    margin-top: 400px;
+  }
+}
+.fade-row {
+  height: 200px;
+  background-color: black;
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(black), to(rgba(0, 0, 0, 0)));
+}
+
+.reverse-fade-row {
+  height: 200px;
+  background-color: black;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+  margin-top: -2px;
+}
+
+.content-row {
+  color: white;
+  background-color: black;
+  margin-top: -2px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.content-row a {
+  color: white;
+}
+.content-row a:hover {
+  color: #AD5D2F;
+}
+.content-row .fa {
+  font-size: 5rem;
+  margin: 20px;
+}
+
+.column-section {
+  margin-top: 50px;
+}
+
+#spotify-follow-button {
+  margin-left: 85px;
+}
+
+iframe {
+  height: 200px;
+  border-radius: 10px;
+}
+
+#preorder-album-art {
+  height: 325px;
+}
+
+#preorder-section input {
+  margin: 5px;
+}
+#preorder-section label {
+  background-color: black;
+  color: white;
+}
+#preorder-section h1 {
+  margin-top: 125px;
+}
+
+body {
+  background: url("../images/trio_shot.png") no-repeat center center fixed;
+  height: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
