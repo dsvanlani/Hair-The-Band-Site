@@ -1,10 +1,12 @@
+
+// Color Pallette
 $turquoise: #40ADAD;
 $lightBlue: #91FFFF;
 $boldBlue: #75FAFA;
 $boldOrange: #AD5D2F;
 $lightOrange: #FAA675;
 
-
+// Navbar stuff
 .navbar {
     position: relative;
     background: $lightBlue;
@@ -33,3 +35,47 @@ $lightOrange: #FAA675;
 .nav-link:hover {
     color: $lightOrange;
     }
+
+@media (min-width: 768px) {
+    #nav-link-1 {
+        position: absolute;
+        left: 22%;
+        margin-left: -5px;
+        }
+    #nav-link-2 {
+        position: absolute;
+        left: 32%;
+        margin-left: -5px;
+        }
+    #nav-link-3 {
+    position: absolute;
+    left: 60%;
+    margin-left: -5px;
+    }
+    #nav-link-4 {
+    position: absolute;
+    left: 70%;
+    margin-left: -5px;
+    }
+ }
+
+ // Footer stuff
+
+ #footer {
+    background: $turquoise;
+    padding: 4px;
+    a {
+    color: white;
+    }
+    a:hover {
+    color: $boldOrange;
+    }
+    a, a:hover {
+        margin:4px;}
+    small {
+    color: white;}
+    }
+
+
+    // Main Body Stuff
+

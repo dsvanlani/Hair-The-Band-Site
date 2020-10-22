@@ -27,4 +27,46 @@
   color: #FAA675;
 }
 
+@media (min-width: 768px) {
+  #nav-link-1 {
+    position: absolute;
+    left: 22%;
+    margin-left: -5px;
+  }
+
+  #nav-link-2 {
+    position: absolute;
+    left: 32%;
+    margin-left: -5px;
+  }
+
+  #nav-link-3 {
+    position: absolute;
+    left: 60%;
+    margin-left: -5px;
+  }
+
+  #nav-link-4 {
+    position: absolute;
+    left: 70%;
+    margin-left: -5px;
+  }
+}
+#footer {
+  background: #40ADAD;
+  padding: 4px;
+}
+#footer a {
+  color: white;
+}
+#footer a:hover {
+  color: #AD5D2F;
+}
+#footer a, #footer a:hover {
+  margin: 4px;
+}
+#footer small {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
