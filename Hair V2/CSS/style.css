@@ -21,7 +21,7 @@ body:after {
 }
 
 .navbar {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0);
   min-height: 90px;
 }
 .navbar button {
@@ -95,6 +95,18 @@ body:after {
   color: white;
 }
 
+.section-header {
+  position: sticky;
+  top: 91px;
+  background-color: black;
+  color: white;
+  margin-top: -2px;
+}
+
+.section {
+  background-color: black;
+}
+
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -126,8 +138,8 @@ body:after {
 }
 
 .content-row {
-  color: white;
   background-color: black;
+  color: white;
   margin-top: -2px;
   padding-top: 75px;
   padding-bottom: 75px;
@@ -161,9 +173,13 @@ iframe {
 }
 
 #preorder-section input {
-  margin: 5px;
+  margin: 10px;
+}
+#preorder-section select {
+  margin: 10px;
 }
 #preorder-section label {
+  margin: 10px;
   background-color: black;
   color: white;
 }
