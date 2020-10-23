@@ -29,8 +29,8 @@ body:after {
 // Navbar stuff
 .navbar {
 
-
-    background: rgba(255, 255, 255, 0);
+    z-index: 1201;
+    background: rgba(255, 255, 255, .3);
     min-height: 90px;
 
     button {
@@ -111,14 +111,23 @@ body:after {
 
 .section-header {
     position: sticky;
-    top: 91px;
+    top: 90px;
     background-color: black;
     color: white;
     margin-top: -2px;
+    z-index: 1200;
+    border-color: $boldOrange;
+    border-style: solid;
+    border-width: 1px;
+    padding:5px;
     }
-.section {
-    background-color: black;
+.nav-sticky-div {
+    position: sticky;
+    top: 0;
+    margin-top: -2px;
+    z-index: 100;
     }
+
 .container-fluid {
     padding-right: 0;
     padding-left: 0;
@@ -151,7 +160,6 @@ body:after {
     -webkit-mask-image: -webkit-gradient(linear, left top,
     left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
     margin-top: -2px;
-
     }
 
 .content-row {

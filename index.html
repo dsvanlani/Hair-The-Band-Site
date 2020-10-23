@@ -13,6 +13,8 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- My Javascript -->
+    <script src="javascript/index.js"></script>
     <title>HAIR</title>
   </head>
   <body>
@@ -39,9 +41,13 @@
 
   <!-- MAIN CONTENT -->
   <div class="container-fluid full-width" id="main-content">
-    <div id="sounds-section">
-        <div class="row fade-row"></div>
+    <!-- Sounds Section -->
+    <div>
+      <div class="row fade-row"></div>
         <div class="row content-row text-center">
+          <div class="col-12 section-header">
+            <h4 id="sounds-section">sounds</h4>
+          </div>
           <div class="col-sm-6">
             <div class="column-section">
               <h1>listen on</h1>
@@ -61,16 +67,13 @@
             </div>
           </div>
         </div>
-
-        <div class="row reverse-fade-row"></div>
     </div>
-    <div class="row" style="height:100px;"></div>
-
-    <div id="pictures-section">
-        <div class="row fade-row"></div>
-
-        <!-- Pictures Section -->
-        <div class="row content-row">
+     <!-- Pictures Section -->
+    <div>
+        <div class="row content-row text-center">
+          <div class="col-12 section-header">
+            <h4 id="pictures-section">pictures</h4>
+          </div>
             <!-- BEGIN CAROUSEL -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
@@ -111,26 +114,25 @@
             <!-- End Carousel -->
           </div>
     </div>
-
-    <div class="row reverse-fade-row"></div>
-    <div class="row" style="height: 100px;"></div>
-    <div id="videos-section">
-        <div class="row fade-row"></div>
-
-          <!-- Video Section -->
+      <!-- Video Section -->
+    <div>
           <div class="row content-row text-center">
+            <div class="col-12 section-header">
+                <h4 id="videos-section">videos</h4>
+            </div>
             <div class="col">
-              <h1>videos coming soon</h1>
+              <h1>coming soon</h1>
             </div>
           </div>
     </div>
 
-      <div class="row reverse-fade-row"></div>
 
       <!-- Vinly Preorder Section -->
-  <div id="preorder-section">
-      <div class="row fade-row"></div>
+  <div>
       <div class="row text-center content-row">
+          <div class="col-12 section-header">
+            <h4 id="preorder-section">preorder vinyl</h4>
+          </div>
         <div class="col-sm-6 column-section">
           <h1>180g vinyl preorder</h1>
           <!-- Paypal Button -->
@@ -162,25 +164,25 @@
 
 
   <!-- FOOTER -->
-<div class="container-fluid full-width sticky-bottom" id="footer">
-  <div class="row text-center">
-    <div class="col-sm-4">
-      <a href="https://www.instagram.com/hairtheband/" class="fa fa-instagram"></a>
-      <a href="https://open.spotify.com/artist/57sGdQMr8i5D7PvD8JBQlG?si=fqq-LMGrQCCUN0eHaOZX4w" class="fa fa-spotify"></a>
-      <a href="https://hairhairhair.bandcamp.com/releases" class="fa fa-bandcamp"></a>
-    </div>
-    <div class="col-sm-4">
-      <div class="footer-text">
-        <small>contact: thebandhair@gmail.com</small>
+    <div class="container-fluid full-width sticky-bottom" id="footer">
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <a href="https://www.instagram.com/hairtheband/" class="fa fa-instagram"></a>
+          <a href="https://open.spotify.com/artist/57sGdQMr8i5D7PvD8JBQlG?si=fqq-LMGrQCCUN0eHaOZX4w" class="fa fa-spotify"></a>
+          <a href="https://hairhairhair.bandcamp.com/releases" class="fa fa-bandcamp"></a>
+        </div>
+        <div class="col-sm-4">
+          <div class="footer-text">
+            <small>contact: thebandhair@gmail.com</small>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="footer-text">
+            <small>copyright 2020 HAIR</small>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-sm-4">
-      <div class="footer-text">
-        <small>copyright 2020 HAIR</small>
-      </div>
-    </div>
-  </div>
-</div>
 
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
