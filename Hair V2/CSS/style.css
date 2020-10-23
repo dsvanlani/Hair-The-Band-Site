@@ -1,5 +1,10 @@
 html {
   scroll-behavior: smooth;
+  background: url("../images/trio_shot.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .navbar {
@@ -151,15 +156,6 @@ iframe {
 }
 #preorder-section h1 {
   margin-top: 125px;
-}
-
-body {
-  background: url("../images/trio_shot.png") no-repeat center center fixed;
-  height: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
