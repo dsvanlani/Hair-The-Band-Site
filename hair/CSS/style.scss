@@ -19,7 +19,7 @@ html {
               left:0;
               right:0;
               z-index:-1; /* needed to keep in the background */
-              background: url('../images/mobile-bg.png') center center;
+              background: url('https://www.hairtheband.com/hair/images/mobile-bg.png') center center;
               -webkit-background-size: cover;
               -moz-background-size: cover;
               -o-background-size: cover;
@@ -29,7 +29,7 @@ html {
 
 @media (min-width: 576px) {
     body, #coming-soon-picture {
-              background: url('../images/trio_shot.png') no-repeat center center fixed;
+              background: url('https://www.hairtheband.com/hair/images/trio_shot.png') no-repeat center center fixed;
               -webkit-background-size: cover;
               -moz-background-size: cover;
               -o-background-size: cover;
@@ -41,7 +41,7 @@ html {
 // Navbar stuff
 .navbar {
     background: rgba(255, 255, 255, .5);
-    min-height: 90px;
+    min-height: 70px;
     button {
         position: absolute;
         left: 80%;
@@ -58,11 +58,11 @@ html {
 .navbar-brand {
     position: absolute;
     left: 50%;
-    margin-left: -80px;
+    margin-left: -60px;
     }
 
 #nav-logo {
-    width: 160px;
+    width: 120px;
     height: auto;
     }
 
