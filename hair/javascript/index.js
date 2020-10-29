@@ -7,6 +7,8 @@ function changeView() {
 
   //set target display to block
   document.querySelector(data.targetview).style.display = "block"
+  //collapse the navbar
+  $('#navbarNavAltMarkup').collapse('hide')
 }
 
 document.addEventListener("DOMContentLoaded", () => {
