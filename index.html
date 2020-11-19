@@ -13,8 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- My Javascript -->
     <script src="https://www.hairtheband.com/hair/javascript/index.js"></script>
-      <!-- PayPal Javascript -->
-    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+
     <title>HAIR</title>
   </head>
 
@@ -38,10 +37,10 @@
                   <a id="nav-link-2" class="change-view-link" href="#pictures-view" data-targetview="#pictures-view"><b>pictures</b></a>
               </div>
               <div class="nav-item">
-                <a id="nav-link-3" class="change-view-link" href="#" data-targetview="#video-view"><b>video</b></a>
+                <a id="nav-link-3" class="change-view-link" href="#videos" data-targetview="#video-view"><b>video</b></a>
               </div>
               <div class="nav-item">
-                  <a id="nav-link-4" class="change-view-link" href="#preorder-div" data-targetview="#main-view"><b>vinyl preorder</b></a>
+                  <a id="nav-link-4" class="change-view-link" href="#preorder" data-targetview="#main-view"><b>vinyl preorder</b></a>
               </div>
           </div>
         </div>
@@ -55,7 +54,7 @@
                     <h3>pictures</h3>
                 </div>
             </div>
-            <div class="row no-gutters text-center content-row">
+            <div id="pictures-row" class="row no-gutters text-center content-row">
                 <div class="col-12">
                     <img src="https://www.hairtheband.com/hair/images/_196500-R1-9A.png">
                 </div>
@@ -86,66 +85,34 @@
 
         <!-- Video View -->
         <div class="container-fluid full-width px-0 view" id="video-view">
-            <div class="row no-gutters fade-row"></div>
+            <div class="row no-gutters fade-row" id="videos"></div>
             <div class="row no-gutters content-row">
-                <div class="col">
-                    <img id="coming-soon-picture" src="https://www.hairtheband.com/hair/images/coming-soon.jpg">
+                <div class="col text-center">
+                  <!-- Put the video in this .video-wrapper div -->
+                  <div class="video-container">
+                      <!-- Paste iFrame Here! -->
+                  </div>
                 </div>
             </div>
         </div>
 
     <!-- Main VIEW -->
         <div class="container-fluid full-width px-0 view" id="main-view">
-            <div class="row no-gutters fade-row"></div>
+            <div class="row no-gutters fade-row" id="preorder"></div>
             <div class="row no-gutters text-center content-row">
                 <!-- PRE ORDER COLUMN -->
                 <div class="col-md-4" id="preorder-div">
                     <h3>preorder 180g vinyl</h3>
                     <img id="preorder-album-art" src="https://www.hairtheband.com/hair/images/album-art.jpg"><br>
-                    <p>$30.00</p>
+                    <p>$21.00 + $6.99 shipping</p>
                                         <!-- PAYPAL INTEGRATION -->
-                    <div id="paypal-button"></div>
-<script>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick">
+                        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                    </form>
 
-  paypal.Button.render({
-    // Configure environment
-    env: 'sandbox',
-    client: {
-      sandbox: 'AZ_0mgut7yyve36uxuyU1j7yb9EkFKpmqcwXOYFPjxbiKbpRbr3miEmGRfqZU7kypiPzoCOxTNI6Atw0',
-      production: 'demo_production_client_id'
-    },
-    // Customize button (optional)
-    locale: 'en_US',
-    style: {
-      size: 'small',
-      color: 'gold',
-      shape: 'pill',
-    },
-
-    // Enable Pay Now checkout flow (optional)
-    commit: true,
-
-    // Set up a payment
-    payment: function(data, actions) {
-      return actions.payment.create({
-        transactions: [{
-          amount: {
-            total: '30.00',
-            currency: 'USD'
-          }
-        }]
-      });
-    },
-    // Execute the payment
-    onAuthorize: function(data, actions) {
-      return actions.payment.execute().then(function() {
-        // Show a confirmation message to the buyer
-        window.alert('Thank you for your purchase!');
-      });
-    }
-  }, '#paypal-button');
-
-</script>
                 </div>
 
                 <!-- "LISTEN ON Column" -->
@@ -155,7 +122,7 @@
                     <span><a href="https://hairhairhair.bandcamp.com/releases" class="fa fa-bandcamp"></a></span>
                 </div>
 
-                <!-- EMBEDDED COLUMN -->
+                <!-- Spotify EMBEDDED COLUMN -->
                 <div class="col-md-4" id="spotify-player-div">
                     <!-- Spotify Embed -->
                     <iframe id="spotify-player-embed" src="https://open.spotify.com/embed/artist/57sGdQMr8i5D7PvD8JBQlG" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -197,6 +164,7 @@
             </div>
         </footer>
 
+        <!-- Neccesary bootstrap and Jquery script -->
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
